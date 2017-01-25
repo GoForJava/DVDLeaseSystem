@@ -1,5 +1,6 @@
 package com.dvd.view;
 
+import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.EventQueue;
 import java.awt.GridBagConstraints;
