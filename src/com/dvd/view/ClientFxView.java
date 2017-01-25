@@ -23,7 +23,6 @@ public class ClientFxView extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 		BorderPane borderPane = new BorderPane();	//使用BorderPane、 		、 		
-		//333
 		HBox hBox = addHBox();		//水平盒子
 		borderPane.setTop(hBox);	//borderPane顶部
 		borderPane.setCenter(addAnchorPane(addContentPane())); //BorderPane中部
