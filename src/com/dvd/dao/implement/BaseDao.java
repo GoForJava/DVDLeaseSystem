@@ -1,5 +1,9 @@
 package com.dvd.dao.implement;
 
+import com.mysql.jdbc.Connection;
+
 public class BaseDao {
-	private static final String DRIVER= "com.mysql.jdbc";
+	Connection con;
+	private static final String DRIVER= "com.mysql.jdbc.Driver";
+	
 }
