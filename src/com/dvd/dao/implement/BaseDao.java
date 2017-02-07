@@ -1,17 +1,27 @@
 package com.dvd.dao.implement;
 
+import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.SQLException;
 
-import com.mysql.jdbc.Connection;
-import com.mysql.jdbc.Statement;
+
 
 public class BaseDao {
-	Connection con;
-	private static final String DRIVER= "com.mysql.jdbc.Driver";
-	String url = "jdbc:mysql://127.0.0.1:3306/dvd";
-	String usr = "root";
-	Connection conn = null;
-	String sql = null;
-	String password = "admin";
-	
+		private static final String DRIVER = "org.sqlite.JDBC";
+		private static final String URL = "jdbc:sqlite:/users/qianjiaxiang/Desktop/dvd.db";
+		public Connection getConn() {
+			Connection conn = null;
+			try {
+				Class.forName(DRIVER);
+			} catch (ClassNotFoundException e) {
+				e.printStackTrace();
+			}
+			try {
+				conn  = DriverManager.getConnection(URL);
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+			return conn;
+			
+		}
 }
