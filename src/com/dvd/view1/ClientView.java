@@ -1,4 +1,4 @@
-package com.dvd.view;
+package com.dvd.view1;
 
 import java.awt.Color;
 import java.awt.Dimension;

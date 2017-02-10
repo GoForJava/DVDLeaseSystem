@@ -1,4 +1,4 @@
-package com.dvd.view;
+package com.dvd.view1;
 
 import javafx.application.Application;
 import javafx.geometry.Insets;

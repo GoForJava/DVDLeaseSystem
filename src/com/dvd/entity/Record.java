@@ -6,9 +6,8 @@ public class Record {
 	private int did;
 	private String lendTime;
 	private String returnTime;
-	public Record(int id, int uid, int did, String lendTime, String returnTime) {
+	public Record(int uid, int did, String lendTime, String returnTime) {
 		super();
-		this.id = id;
 		this.uid = uid;
 		this.did = did;
 		this.lendTime = lendTime;
